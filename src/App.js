@@ -1,10 +1,19 @@
+import Elections from "./components/Elections";
 import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/elections" element={<Elections />}></Route>
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
