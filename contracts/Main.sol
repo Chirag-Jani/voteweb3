@@ -336,30 +336,26 @@ contract VoteWeb3 {
 // candidate can directly apply or create account
 
 // tests to be done:
+
+// ? The below tests are done successfully
 //* - manager check
 //* - create election
 //* - add candidate
 //* - check candidate array
 //* - add same candidate again
 //* - min 2 candidates needed
-// - vote before starting
-// - start election and then add candidate
-// - vote after starting
-// - vote from same account to the same election
-//     - to same candidate
-//     - to different candidate
-// - create another election
-// - add same 2 candidates
-// - check candidate array
-// - vote to candidates from different accounts
-//     - 2 votes to one candidate
-//     - 1 vote to the other candidate
-// - end first election
-//     - check winner
-// - check first election state
-// - end 2nd election
-//     - check winner
-// - check 2nd election state
+//* - vote before starting
+//* - start election and then add candidate
+//*  - vote after starting
+//* - vote from same account to the same election
+//* - vote to candidates from different accounts
+//*     - 2 votes to one candidate
+//*     - 1 vote to the other candidate
+//* - end first election
+//*     - check winner
+//* - check first election state
+
+// ? These are remaining as Ending Election on timestamp is yet to execute
 // - create another election
 // - add 2 candidates
 // - same process
